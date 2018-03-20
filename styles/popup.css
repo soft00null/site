@@ -1,0 +1,93 @@
+#popup.popup-modal {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 172%;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 9999999;
+	transform: scaleX(1.1) scaleY(1.1);
+}
+
+#popup.popup-modal .popup-modal-content {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	width: 35rem;
+	max-width: 80%;
+	border-radius: 1rem;
+	padding: 0.5rem 0 1rem 0;
+	cursor: pointer;
+	border: 2px solid #212121;
+}
+
+#popup .flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+#popup .flex-container.direction-column {
+	flex-direction: column;
+}
+
+#popup .flex-container .flex-item {
+	flex: 1;
+}
+
+#popup .flex-container .flex-item.flex-grow-zero {
+	flex-grow: 0;
+}
+
+#popup img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+#popup .center {
+	display: flex;
+	justify-content: center;
+}
+
+#popup .center > * {
+	flex: 1;
+}
+
+#popup hr {
+	margin: 1rem 2.5rem;
+	opacity: 0.5;
+}
+
+#popup .closePopupImg {
+	width: 2.5rem;
+	height: 2.5rem;
+	float: right;
+	position: fixed;
+	right: -17px;
+	top: -17px;
+	border-radius: 2rem;
+	box-shadow: 0 0 black;
+}
+
+#popup .amazon_pay_logo {
+	width: 326px;
+	height: 85px;
+}
+
+@media only screen and (max-width: 760px) {
+	#popup .amazon_pay_logo {
+		width: 150px;
+		height: 39.2px;
+	}
+	#popup .playstore_logo {
+		width: 90px;
+		height: 30px;
+	}
+	#popup .closePopupImg {
+		right: -15px;
+		top: -15px;
+	}
+}
